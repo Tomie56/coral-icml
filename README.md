@@ -17,7 +17,7 @@ CORAL is a lightweight inference-time steering method that improves both accurac
 - Training takes **< 5 hours** on a single RTX 2080 Ti using only cached activations
 
 <p align="center">
-  <img src="assets/coral_pipeline.png" width="700" alt="CORAL Pipeline">
+  <img src="coral_figure.png" width="700" alt="CORAL Pipeline">
 </p>
 
 ## How It Works
