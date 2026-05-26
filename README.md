@@ -2,7 +2,7 @@
 
 **Transferrable and Calibration-Aware Inference-Time Steering**
 
-[Paper](https://arxiv.org/abs/2602.06022) | [ICML 2026](https://openreview.net/forum?id=1piRnQJhLc)
+[Paper](https://arxiv.org/abs/2602.06022) | [ICML 2026](https://openreview.net/forum?id=1piRnQJhLc) | Score: 5/6
 
 Miranda Muqing Miao, Young-Min Cho, Lyle Ungar  
 University of Pennsylvania
