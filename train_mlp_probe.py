@@ -477,7 +477,7 @@ def train_mlp_single_config(
     if config.get("lr_scheduler") == "reduce_on_plateau":
         scheduler = optim.lr_scheduler.ReduceLROnPlateau(
             optimizer, mode='min', factor=config.get("lr_factor", 0.5),
-            patience=config.get("lr_patience", 5), verbose=False
+            patience=config.get("lr_patience", 5)
         )
     else:
         scheduler = None

@@ -552,6 +552,13 @@ class MLPProbeModel:
         self.use_rankfeat = self.meta.get("use_rankfeat", False)
         self.use_rank_onehot = self.meta.get("use_rank_onehot", False)
 
+        # BUGFIX: Verify feature dimensions match actual probe input
+        # If input_dim is 4097 (4096 + 1), then only rankfeat is used, not rank_onehot
+        input_dim = self.config.get("input_dim", len(self.mu))
+        if input_dim == 4097 and self.use_rankfeat and self.use_rank_onehot:
+            # 4096 (hidden) + 1 (rankfeat) = 4097, so rank_onehot was NOT actually used
+            self.use_rank_onehot = False
+
         # Optional baseline logit/prob feature block
         self.use_logit_block = self.meta.get("use_logit_block", False)
         self.logit_temperature_scales = self.meta.get("logit_temperature_scales", [0.7, 1.0, 1.3])
