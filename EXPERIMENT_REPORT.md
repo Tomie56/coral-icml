@@ -1,19 +1,5 @@
 # CORAL实验报告
 
-## 实验概述
-
-本报告记录了CORAL (Calibrated Predictions with Residual Adaptation for LLMs) 方法在DeepSeek-7B-Chat模型上的完整复现过程和实验结果。
-
-**论文信息：**
-- 标题：Calibrated Language Models Must Hallucinate
-- 会议：ICML 2024
-- 方法：通过MLP探针预测校准残差，在推理时引导模型输出
-
-**实验目标：**
-验证CORAL方法能否同时提升语言模型在多选题任务上的准确率和校准性能。
-
----
-
 ## 1. 实验环境
 
 ### 1.1 硬件配置
